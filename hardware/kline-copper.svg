@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.3mm" height="86.36mm" viewBox="0 0 900 680">
+  <!-- ================================================================
+       Ponte K-line ESP32+L9637D - camada de COBRE (single-sided) - v2 GROSSO
+       Escala: 1 unidade = 0.127 mm  ->  placa ~114 x 86 mm
+       Vista de CIMA. Cobre = face de BAIXO: ESPELHAR na horizontal.
+       Traces ~1.0 mm (pescoco fino so' a' saida do SOIC, 1.27 mm de passo).
+       Pads ao dobro, com furo no centro (camada azul = broca).
+       Camadas por cor:
+         PRETO    = cobre (fill / engrave)
+         AZUL     = contorno + furos (cut)
+         VERMELHO = 5 pontes (fio por cima; NAO e' cobre)
+         VERDE    = referencias (apagar antes de gravar)
+       ================================================================ -->
+
+  <!-- ========= CONTORNO + FUROS DE FIXACAO (azul, cut) ========= -->
+  <g id="outline" fill="none" stroke="#1b6ec2" stroke-width="1.2">
+    <rect x="30" y="30" width="840" height="620" rx="12"/>
+    <circle cx="55" cy="55" r="7"/>
+    <circle cx="845" cy="55" r="7"/>
+    <circle cx="55" cy="625" r="7"/>
+    <circle cx="845" cy="625" r="7"/>
+  </g>
+
+  <!-- ========= COBRE (preto, fill) ========= -->
+  <g id="copper" fill="#000000" stroke="none">
+    <!-- +12V -->
+    <rect x="826" y="146" width="8" height="40"/>
+    <rect x="696" y="178" width="138" height="8"/>
+    <!-- Vs -->
+    <rect x="636" y="178" width="8" height="171"/>
+    <rect x="526" y="341" width="118" height="8"/>
+    <rect x="586" y="316" width="8" height="33"/>
+    <!-- K-line -->
+    <rect x="656" y="356" width="178" height="8"/>
+    <rect x="656" y="356" width="8" height="30"/>
+    <rect x="586" y="378" width="78" height="8"/>
+    <rect x="516" y="378" width="78" height="8"/>
+    <rect x="516" y="378" width="8" height="21"/>
+    <rect x="496" y="391" width="28" height="8"/>
+    <!-- 5V -->
+    <rect x="66" y="62" width="8" height="52"/>
+    <rect x="66" y="62" width="438" height="8"/>
+    <rect x="496" y="62" width="8" height="242"/>
+    <!-- GND -->
+    <rect x="66" y="556" width="8" height="72"/>
+    <rect x="66" y="620" width="768" height="8"/>
+    <rect x="826" y="556" width="8" height="72"/>
+    <!-- 3V3 -->
+    <rect x="66" y="186" width="298" height="8"/>
+    <rect x="146" y="186" width="8" height="68"/>
+    <rect x="356" y="186" width="8" height="68"/>
+    <!-- RX -->
+    <rect x="116" y="331" width="288" height="8"/>
+    <rect x="116" y="331" width="8" height="73"/>
+    <rect x="66" y="396" width="58" height="8"/>
+    <rect x="356" y="296" width="8" height="43"/>
+    <!-- TXD -->
+    <rect x="296" y="351" width="108" height="8"/>
+    <rect x="296" y="351" width="8" height="83"/>
+    <rect x="250" y="426" width="54" height="8"/>
+    <rect x="326" y="426" width="8" height="48"/>
+    <rect x="296" y="426" width="38" height="8"/>
+    <!-- TX (resto por ponte J5) -->
+    <rect x="146" y="356" width="8" height="78"/>
+    <rect x="146" y="426" width="64" height="8"/>
+
+    <!-- pescocos finos a' saida do SOIC (0.5 mm) -->
+    <rect x="398" y="333" width="22" height="4"/>   <!-- pin2 RXD -->
+    <rect x="398" y="353" width="22" height="4"/>   <!-- pin4 TXD -->
+    <rect x="478" y="353" width="22" height="4"/>   <!-- pin5 K -->
+    <rect x="478" y="343" width="22" height="4"/>   <!-- pin6 Vs -->
+    <rect x="478" y="333" width="22" height="4"/>   <!-- pin7 VCC -->
+    <!-- leques de separacao -->
+    <rect x="498" y="298" width="4" height="39"/>   <!-- VCC sobe -->
+    <rect x="498" y="343" width="34" height="4"/>   <!-- Vs vai -->
+    <rect x="498" y="353" width="4" height="44"/>   <!-- K desce -->
+
+    <!-- SOIC-8 pads (L9637D) - passo 1.27 mm -->
+    <rect x="420" y="322" width="18" height="6" rx="1"/>
+    <rect x="420" y="332" width="18" height="6" rx="1"/>
+    <rect x="420" y="342" width="18" height="6" rx="1"/>
+    <rect x="420" y="352" width="18" height="6" rx="1"/>
+    <rect x="462" y="322" width="18" height="6" rx="1"/>
+    <rect x="462" y="332" width="18" height="6" rx="1"/>
+    <rect x="462" y="342" width="18" height="6" rx="1"/>
+    <rect x="462" y="352" width="18" height="6" rx="1"/>
+
+    <!-- THT pads (dobro) -->
+    <circle cx="70" cy="110" r="13"/>
+    <circle cx="70" cy="190" r="13"/>
+    <circle cx="70" cy="280" r="13"/>
+    <circle cx="70" cy="400" r="13"/>
+    <circle cx="70" cy="560" r="13"/>
+    <circle cx="830" cy="150" r="13"/>
+    <circle cx="830" cy="360" r="13"/>
+    <circle cx="830" cy="560" r="13"/>
+    <circle cx="700" cy="182" r="10"/>
+    <circle cx="640" cy="182" r="10"/>
+    <circle cx="590" cy="320" r="10"/>
+    <circle cx="590" cy="382" r="10"/>
+    <circle cx="360" cy="250" r="10"/>
+    <circle cx="360" cy="300" r="10"/>
+    <circle cx="150" cy="250" r="10"/>
+    <circle cx="150" cy="360" r="10"/>
+    <circle cx="330" cy="250" r="10"/>
+    <circle cx="330" cy="470" r="10"/>
+    <circle cx="206" cy="430" r="8"/>
+    <circle cx="230" cy="430" r="8"/>
+    <circle cx="254" cy="430" r="8"/>
+  </g>
+
+  <!-- ========= FUROS NO CENTRO DOS PADS (azul, broca ~1.1 mm) ========= -->
+  <g id="drills" fill="#1b6ec2" stroke="none">
+    <circle cx="70" cy="110" r="4.5"/>
+    <circle cx="70" cy="190" r="4.5"/>
+    <circle cx="70" cy="280" r="4.5"/>
+    <circle cx="70" cy="400" r="4.5"/>
+    <circle cx="70" cy="560" r="4.5"/>
+    <circle cx="830" cy="150" r="4.5"/>
+    <circle cx="830" cy="360" r="4.5"/>
+    <circle cx="830" cy="560" r="4.5"/>
+    <circle cx="700" cy="182" r="4"/>
+    <circle cx="640" cy="182" r="4"/>
+    <circle cx="590" cy="320" r="4"/>
+    <circle cx="590" cy="382" r="4"/>
+    <circle cx="360" cy="250" r="4"/>
+    <circle cx="360" cy="300" r="4"/>
+    <circle cx="150" cy="250" r="4"/>
+    <circle cx="150" cy="360" r="4"/>
+    <circle cx="330" cy="250" r="4"/>
+    <circle cx="330" cy="470" r="4"/>
+    <circle cx="206" cy="430" r="3.5"/>
+    <circle cx="230" cy="430" r="3.5"/>
+    <circle cx="254" cy="430" r="3.5"/>
+  </g>
+
+  <!-- ========= PONTES (vermelho) - fio isolado por cima, NAO cobre ========= -->
+  <g id="jumpers" fill="none" stroke="#e5252c" stroke-width="1.6" stroke-dasharray="8 5">
+    <line x1="429" y1="325" x2="70"  y2="560"/>  <!-- J1: U1.1 GND -> ESP GND -->
+    <line x1="429" y1="66"  x2="429" y2="345"/>  <!-- J2: rail 5V -> U1.3 NSLP -->
+    <line x1="330" y1="66"  x2="330" y2="250"/>  <!-- J3: rail 5V -> R4 topo -->
+    <line x1="230" y1="190" x2="230" y2="430"/>  <!-- J4: 3V3 -> Q1 gate -->
+    <line x1="70"  y1="280" x2="206" y2="430"/>  <!-- J5: ESP TX -> Q1 source -->
+  </g>
+
+  <!-- ========= REFERENCIAS (verde) - apagar antes de gravar ========= -->
+  <g id="labels" fill="#0a7d3a" font-family="sans-serif" font-size="11">
+    <text x="450" y="312" text-anchor="middle" font-weight="bold">U1 L9637D</text>
+    <text x="414" y="329" text-anchor="end">1</text>
+    <text x="414" y="349" text-anchor="end">3</text>
+    <text x="414" y="359" text-anchor="end">4</text>
+    <text x="486" y="339">7</text>
+    <text x="486" y="349">6</text>
+    <text x="486" y="359">5</text>
+    <text x="40" y="95">ESP32</text>
+    <text x="88" y="114">5V</text><text x="88" y="194">3V3</text><text x="88" y="284">TX</text>
+    <text x="88" y="404">RX</text><text x="88" y="564">GND</text>
+    <text x="822" y="130" text-anchor="end">OBD</text>
+    <text x="812" y="154" text-anchor="end">12V</text><text x="812" y="364" text-anchor="end">K</text>
+    <text x="812" y="564" text-anchor="end">GND</text>
+    <text x="670" y="205" text-anchor="middle">D1 1N4007</text>
+    <text x="604" y="355">R1 510</text>
+    <text x="374" y="278">R2 10k</text>
+    <text x="164" y="310">R3 10k</text>
+    <text x="344" y="360">R4 10k</text>
+    <text x="230" y="458" text-anchor="middle">Q1 2N7000  S G D</text>
+    <text x="450" y="55" text-anchor="middle" fill="#888">ESPELHAR p/ transfer</text>
+  </g>
+</svg>
